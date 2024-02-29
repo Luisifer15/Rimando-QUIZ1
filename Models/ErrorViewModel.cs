@@ -1,4 +1,4 @@
-namespace Rimando___QUIZ1.Models
+namespace RIMANDO_Act1_Familiarization.Models
 {
     public class ErrorViewModel
     {

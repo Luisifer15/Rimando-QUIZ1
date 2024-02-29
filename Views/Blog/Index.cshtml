@@ -1,9 +1,18 @@
-﻿@model Blog
+﻿@model BlogsModel
 
 <div class="mainpage-container-flex">
     <div class="mainpage-item-flex mainpage-leftcol">
-        <div class="bot-info">
+        <div class="bot-info border2077">
+            <h2 class="orbitron-Line1">Blog Title: @Model.BlogTitle</h2>
+            Blog ID: <h1>@Model.BlogID</h1>
             
+        </div>
+        <div class="bot-info border2077">
+            @Model.BlogContent
+        </div>
+
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Splash")">Back to Landing Page</a>
         </div>
     </div>
 </div>
