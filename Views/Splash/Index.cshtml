@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div class="mainpage-container-flex">
+    <div class="mainpage-item-flex mainpage-leftcol">
+        <div class="leftcol-item leftcol-basicinfo">
+            <div class="basicinfo basicinfo-img">
+                <img src="~/images/imgLUIS.png" id="UserImg" onmouseover="hover(this);" onmouseout="unhover(this);" />
+            </div>
+            <div class="basicinfo basicinfo-name">
+                <h1 class="UserName rajdhani-bold">
+                    Luis Alfonso DP. Rimando
+                </h1>
+                <p class="UserContact">
+                    Blog Writer:
+                </p>
+                <p class="UserContact">
+                    Blog writer info here, Blog writer info here, Blog writer info here, Blog writer info here, Blog writer info here, 
+                </p>
+            </div>
+        </div>
+        <div class="leftcol-item leftcol-botinfo">
+            <div class="botinfo-Header rajdhani-bold">
+                >>BLOG QUIZ
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mainpage-item-flex mainpage-rightcol">
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 1, month = 1, slug = "Slug 1" })">Blog1 </a>
+        </div>
+
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 1, month = 2, slug = "Slug 2" })">Blog2 </a>
+        </div>
+
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 1, month = 3, slug = "Slug 3" })">Blog3 </a>
+        </div>
+
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 2, month = 4, slug = "Slug 4" })">Blog4 </a>
+        </div>
+
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 2, month = 5, slug = "Slug 5" })">Blog5 </a>
+        </div>
+
+        <div class="bot-info">
+            <a class="orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 2, month = 6, slug = "Slug 6" })">Blog6 </a>
+        </div>
+
+
+    </div>
+</div>
