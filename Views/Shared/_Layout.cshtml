@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - Rimando___QUIZ1</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Rimando___QUIZ1.styles.css" asp-append-version="true" />
     
@@ -20,22 +21,57 @@
 
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="cyberpunk-item cyberpunk-topleft">
-                //LUIS.RIMANDO >> BLOG.QUIZ
-            </div>
-            <div class="cyberpunk-item cyberpunk-topright">
-                //QUIZ.1
+
+    <div class="pagewrapper">
+
+        <header class="bar headerbar">
+            Header content
+        </header>
+
+        <div class="sidebar">
+            <div class="sidebarwrapper rajdhani-semibold">
+                <div class="WriterContainer">
+                    <div class="sidebarIMG">
+                        <img src="~/images/imgLUIS.png" class="Userimg" />
+                    </div>
+                    <div class="sidebarDetails sidebarName">
+                        <h1 class="rajdhani-bold">Luis Alfonso Rimando</h1>
+                        <h3>Blog Author</h3>
+                    </div>
+
+                    <div class="sidebarDetails">
+                        Writer Bio and Creds here, Writer Bio and Creds here, Writer Bio and Creds hereWriter Bio and Creds here,
+                        Writer Bio and Creds here, Writer Bio and Creds here, Writer Bio and Creds hereWriter Bio and Creds here,
+                        Writer Bio and Creds here, Writer Bio and Creds here, Writer Bio and Creds hereWriter Bio and Creds here,
+                        Writer Bio and Creds here, Writer Bio and Creds here, Writer Bio and Creds hereWriter Bio and Creds here,
+                    </div>
+                </div>
+                <div class="LinksContainer">
+                    <div class="BlogsLabel">
+                        <h2 class="rajdhani-semibold">Blog links:</h2>
+                    </div>
+                    <div class="BlogLinks">
+                        <a class="blogLink orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 1, month = 1, slug = "Slug 1" })">Blog 1 </a><br />
+                        <a class="blogLink orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 1, month = 2, slug = "Slug 2" })">Blog 2 </a><br />
+                        <a class="blogLink orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 1, month = 3, slug = "Slug 3" })">Blog 3 </a><br />
+                    </div>
+                    <div class="BlogLinks">
+                        <a class="blogLink orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 2, month = 1, slug = "Slug 4" })">Blog 4 </a><br />
+                        <a class="blogLink orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 2, month = 2, slug = "Slug 5" })">Blog 5 </a><br />
+                        <a class="blogLink orbitron-Line1" href="@Url.Action("Index", "Blog", new { year = 2, month = 3, slug = "Slug 6" })">Blog 6 </a><br />
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
 
-    <div>
-        <main role="main">
-            @RenderBody()
-        </main>
+        <div class="pagebody">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+
     </div>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
