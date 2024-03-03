@@ -98,24 +98,6 @@ body {
     background-color: pink;*/
 }
 
-@media all and (min-width: 1000px) {
-
-    .sidebar {
-        height: var(--bodyheight);
-        flex: 1;
-        order: 1;
-    }
-
-    .pagebody {
-        flex: 3;
-        order: 2;
-    }
-
-    .footer {
-        order: 3;
-    }
-}
-
 .sidebarwrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -143,7 +125,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 20vh;
-    max-height: 20vh;
+    height: 20vh;
     border-radius: 50%;
     margin: 20px;
     border: 5px solid var(--Xred);
@@ -195,7 +177,7 @@ h2{
 }
 
 .LinksContainer {
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     display: flex;
     flex: 1;
 }
@@ -219,11 +201,12 @@ h2{
 .bodywrapper {
     display: flex;
     width: 96%;
-    height: var(--bodyheight);
+    min-height: var(--bodyheight);
     justify-content: center;
     align-items: center;
     padding: 15px;
     color:white;
+
 }
 
 .BlogContainer {
@@ -263,4 +246,26 @@ h2{
     border-bottom-right-radius: 15px;
     font-size: 20px;
     padding: 5%;
+}
+
+@media all and (min-width: 1000px) {
+
+    .sidebar {
+        height: var(--bodyheight);
+        flex: 1;
+        order: 1;
+    }
+
+    .pagebody {
+        flex: 3;
+        order: 2;
+    }
+
+    .footer {
+        order: 3;
+    }
+
+    .LinksContainer {
+        flex-flow: row wrap;
+    }
 }
